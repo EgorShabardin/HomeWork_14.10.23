@@ -19,7 +19,6 @@ namespace Решение_задач
             DateTime secondDate = new DateTime(2019, 01, 18);
 
 
-
             Console.WriteLine("{0, 75}", "ОБЪЕКТЫ КЛАССА PatientHospitalCard");
 
             Console.WriteLine("\nДОБАВЛЕНИЕ ЗАПИСЕЙ:");
@@ -103,7 +102,7 @@ namespace Решение_задач
             thirdPatient.ChangeWorkPlace("ВУЗ");
             Console.WriteLine($"Новое место работы - {thirdPatient.WorkPlace}");
 
-            //Console.WriteLine("\nСМЕНА МЕСТА ЖИТЕЛЬСТВА:");
+            Console.WriteLine("\nСМЕНА МЕСТА ЖИТЕЛЬСТВА:");
             thirdPatient.ChangeResidencePlace("г.Москва");
             Console.WriteLine($"Новое место жительства - {thirdPatient.ResidencePlace}");
 
