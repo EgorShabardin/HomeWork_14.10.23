@@ -101,19 +101,7 @@ namespace Решение_задач
         /// </summary>
         /// <param name="recordingDate"> Дата записи. </param>
         /// <param name="record"> Запись. </param>
-        public virtual void AddNewRecord(DateTime recordingDate, string record)
-        {
-            if (!records.ContainsKey(recordingDate))
-            {
-                Console.WriteLine("Запись добавлена!");
-                records.Add(recordingDate, record);
-                ChangeNumberOfRecords(true);
-            }
-            else
-            {
-                Console.WriteLine("Запись за это число уже существует!");
-            }
-        }
+        abstract public void AddNewRecord(DateTime recordingDate, string record);
 
         /// <summary>
         /// Метод, позволяющий читать запись по дате.
